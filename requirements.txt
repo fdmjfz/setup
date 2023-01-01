@@ -2,7 +2,12 @@ Adafruit-SSD1306
 pandas
 scikit-learn
 xgboost
+tensorflow
 curses
 numpy
+gpiozero
+bme280pi
+apscheduler
 Flask
 dash
+psutil
