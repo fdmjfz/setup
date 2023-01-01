@@ -13,6 +13,7 @@ cd python
 git clone https://github.com/fdmjfz/secretron.git
 git clone https://github.com/fdmjfz/weatherstation.git
 git clone https://github.com/fdmjfz/rpi-python.git
+mv rpi-python old-python
 
 #Python Packages
 sudo apt update -y
