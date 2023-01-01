@@ -5,7 +5,7 @@ sudo apt update -y
 sudo apt upgrade -y
 
 #Get custom packages
-sudo apt-get install git
+sudo apt install git
 cd ..
 mkdir python
 git clone https://github.com/fdmjfz/documentacion.git
