@@ -2,9 +2,7 @@
 
 #Install Dependencies
 sudo apt update -y
-sudo apt-get update -y
 sudo apt upgrade -y
-sudo apt-get upgrade -y
 
 #Get custom packages
 sudo apt-get install git
