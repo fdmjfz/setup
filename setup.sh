@@ -29,3 +29,5 @@ pip install --upgrade protobuf
 python3 -m pip install --user qmk
 qmk setup
 wget https://www.pjrc.com/teensy/teensy_linuxarm64.tar.gz
+tar -xf teensy_linuxarm64.tar.gz
+rm teensy_linuxarm64.tar.gz
