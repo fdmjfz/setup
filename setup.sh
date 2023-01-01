@@ -14,6 +14,7 @@ git clone https://github.com/fdmjfz/secretron.git
 git clone https://github.com/fdmjfz/weatherstation.git
 git clone https://github.com/fdmjfz/rpi-python.git
 mv rpi-python old-python
+cd ..
 
 #Python Packages
 sudo apt update -y
@@ -24,3 +25,7 @@ pip install -r requirements.txt
 # install correct version protobuf
 pip install --upgrade protobuf
 
+#QMK Keyboard setup
+python3 -m pip install --user qmk
+qmk setup
+wget https://www.pjrc.com/teensy/teensy_linuxarm64.tar.gz
