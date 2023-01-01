@@ -12,3 +12,4 @@ Flask
 dash
 psutil
 tensorflow
+protobuf
