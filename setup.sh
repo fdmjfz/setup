@@ -12,7 +12,7 @@ git clone https://github.com/fdmjfz/documentacion.git
 cd python
 git clone https://github.com/fdmjfz/secretron.git
 git clone https://github.com/fdmjfz/weatherstation.git
-git clone https://github.com/fdmjfz/rpi-ptython.git
+git clone https://github.com/fdmjfz/rpi-python.git
 
 #Python Packages
 sudo apt update -y
