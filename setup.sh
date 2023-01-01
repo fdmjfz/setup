@@ -1,26 +1,12 @@
 #!/bin/bash
 
+if [ "$1" == all ] ; then
 #Install Dependencies
 sudo apt update -y
 sudo apt upgrade -y
 
-#Get custom packages
+#Packages
 sudo apt install git
-cd ..
-rm -rf python
-mkdir python
-rm -rf documentacion
-git clone https://github.com/fdmjfz/documentacion.git
-cd python
-rm -rf secretron
-git clone https://github.com/fdmjfz/secretron.git
-rm -rf weatherstation
-git clone https://github.com/fdmjfz/weatherstation.git
-rm -rf old-python
-rm -rf rpi-python
-git clone https://github.com/fdmjfz/rpi-python.git
-mv rpi-python old-python
-cd ..
 
 #7" LCD HDMI Screen
 rm -rf LCD-show
@@ -44,3 +30,23 @@ qmk setup
 wget https://www.pjrc.com/teensy/teensy_linuxarm64.tar.gz
 tar -xf teensy_linuxarm64.tar.gz
 rm teensy_linuxarm64.tar.gz
+
+fi
+
+#Get custom packages
+cd ..
+rm -rf python
+mkdir python
+rm -rf documentacion
+git clone https://github.com/fdmjfz/documentacion.git
+cd python
+rm -rf secretron
+git clone https://github.com/fdmjfz/secretron.git
+rm -rf weatherstation
+git clone https://github.com/fdmjfz/weatherstation.git
+rm -rf old-python
+rm -rf rpi-python
+git clone https://github.com/fdmjfz/rpi-python.git
+mv rpi-python old-python
+cd ..
+
