@@ -7,14 +7,27 @@ sudo apt upgrade -y
 #Get custom packages
 sudo apt install git
 cd ..
+rm -rf python
 mkdir python
+rm -rf documentacion
 git clone https://github.com/fdmjfz/documentacion.git
 cd python
+rm -rf secretron
 git clone https://github.com/fdmjfz/secretron.git
+rm -rf weatherstation
 git clone https://github.com/fdmjfz/weatherstation.git
+rm -rf old-python
+rm -rf rpi-python
 git clone https://github.com/fdmjfz/rpi-python.git
 mv rpi-python old-python
 cd ..
+
+#7" LCD HDMI Screen
+rm -rf LCD-show
+git clone https://github.com/goodtft/LCD-show.git
+chmod -R 755 LCD-show
+cd LCD-show
+sudo ./LCD7C-show
 
 #Python Packages
 sudo apt update -y
