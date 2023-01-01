@@ -10,13 +10,13 @@ sudo apt install libatlas-base-dev
 sudo apt-get install git
 
 # install correct version protobuf
-sudo -H pip3 install --upgrade protobuf==3.20.0
+sudo -H pip install --upgrade protobuf==3.20.0
 
 #Python Packages
 sudo apt update -y
 sudo apt install -y python3-pip
-pip3 install --upgrade
-pip3 install -r requirements.txt
+pip install --upgrade
+pip install -r requirements.txt
 #Tensorflow
 git clone -b v0.23.1 --depth=1 --recursive https://github.com/tensorflow/io.git
 cd io
