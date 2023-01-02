@@ -10,6 +10,8 @@ rm -rf LCD-show
 git clone https://github.com/goodtft/LCD-show.git
 
 cd python
+rm -rf oled
+git clone https://github.com/fdmjfz/oled.git
 rm -rf secretron
 git clone https://github.com/fdmjfz/secretron.git
 rm -rf weatherstation
