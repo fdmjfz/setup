@@ -36,9 +36,10 @@ sudo apt update -y
 sudo apt install libatlas-base-dev
 sudo apt install -y python3-pip
 pip install --upgrade
-pip install -r requirements.txt
 # install correct version protobuf
 pip install --upgrade protobuf
+pip install -r requirements.txt
+
 
 #QMK Keyboard setup
 python3 -m pip install --user qmk
