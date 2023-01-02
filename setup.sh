@@ -31,11 +31,6 @@ sudo apt upgrade -y
 #Packages
 sudo apt install git
 
-#7" LCD HDMI Screen
-chmod -R 755 LCD-show
-cd LCD-show
-sudo ./LCD7C-show
-
 #Python Packages
 sudo apt update -y
 sudo apt install libatlas-base-dev
@@ -54,3 +49,10 @@ rm teensy_linuxarm64.tar.gz
 
 fi
 
+if [ "$1" == screen ] ; then
+#7" LCD HDMI Screen
+chmod -R 755 LCD-show
+cd LCD-show
+sudo ./LCD7C-show
+
+fi
